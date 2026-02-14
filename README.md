@@ -114,7 +114,7 @@ Alert emitted via socket
 If label = 0:
 Segment deleted
 
-Event Model
+## Event Model
 Stored fields:
 cameraId
 timestamp
@@ -125,21 +125,20 @@ fileName
 filePath
 fileSize
 
-Real-Time Alerts
-
+## Real-Time Alerts
 Frontend listens:
 
 socket.on("suspiciousAlert", (data) => {
   console.log("Suspicious Activity Detected:", data)
 })
 
-📂 Video Access
+# Video Access
 
 Suspicious videos available at:
 
 http://localhost:5000/videos/<filename>
 
-⚠️ Important Notes
+# Important Notes
 
 Do not stream frames over socket (inefficient).
 
@@ -151,41 +150,7 @@ Backend does not perform ML logic.
 
 ML service only returns prediction.
 
-🔧 Future Improvements
-
-Stop camera endpoint
-
-Camera status tracking
-
-Clip auto-cleanup
-
-Multi-camera scaling optimization
-
-Authentication layer
-
-👩‍💻 Author
+# Author
 
 Laxmi
 Dynamic Surveillance Backend
-
-
----
-
-# 🎯 What This README Achieves
-
-✔ Explains architecture  
-✔ Explains folder structure  
-✔ Explains how to run  
-✔ Explains ML contract  
-✔ Explains socket usage  
-✔ Professional and clean  
-
----
-
-Now do:
-
-1. Create `README.md`
-2. Paste this
-3. Commit and push
-
-If you want, I can also give a more “GitHub professional” version with badges and diagrams.
